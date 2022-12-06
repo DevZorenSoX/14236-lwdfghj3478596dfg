@@ -1,7 +1,3 @@
-local UiLib =  game:GetService("CoreGui"):FindFirstChild("UiLibrary") 
-if UiLib then 
-    UiLib:Destroy()
-end
 	local UserInputService = game:GetService("UserInputService")
 	local TweenService = game:GetService("TweenService")
 	local RunService = game:GetService("RunService")
@@ -3998,3 +3994,4 @@ local MiscPage2 = MiscTab:newpage()
 
 local SettingPage1 = SettingTab:newpage()
 local SettingPage2 = SettingTab:newpage()
+return create
