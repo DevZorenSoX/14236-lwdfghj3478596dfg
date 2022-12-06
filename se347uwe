@@ -1,4 +1,8 @@
-local UserInputService = game:GetService("UserInputService")
+local UiLib =  game:GetService("CoreGui"):FindFirstChild("UiLibrary") 
+if UiLib then 
+    UiLib:Destroy()
+end
+	local UserInputService = game:GetService("UserInputService")
 	local TweenService = game:GetService("TweenService")
 	local RunService = game:GetService("RunService")
 	local LocalPlayer = game:GetService("Players").LocalPlayer
@@ -3954,4 +3958,43 @@ local IMGNAME = Instance.new("ImageLabel")
 		end
 	return top
 	end
-return create
+local Window = create.win()
+local MainTab = Window:Tabs("Main")
+local ItemTab = Window:Tabs("Items")
+local PlayerTab = Window:Tabs("Player")
+local RaidTab = Window:Tabs("Raids")
+local TPTab = Window:Tabs("Teleport")
+local MaTab = Window:Tabs("Materials")
+local MiscTab = Window:Tabs("Misc")
+local SettingTab = Window:Tabs("Setting")
+
+local MainPage1 = MainTab:newpage()
+local MainPage2 = MainTab:newpage()
+local MainPage3 = MainTab:newpage()
+local MainPage4 = MainTab:newpage()
+
+local ItemPage1 = ItemTab:newpage()
+local ItemPage2 = ItemTab:newpage()
+local ItemPage3 = ItemTab:newpage()
+local ItemPage4 = ItemTab:newpage()
+
+local PlrPage1 = PlayerTab:newpage()
+local PlrPage2 = PlayerTab:newpage()
+
+local RaidPage1 = RaidTab:newpage()
+local RaidPage2 = RaidTab:newpage()
+
+local TPPage1 = TPTab:newpage()
+local TPPage2 = TPTab:newpage()
+
+local MaPage1 = MaTab:newpage()
+local MaPage2 = MaTab:newpage()
+local MaPage3 = MaTab:newpage()
+local MaPage4 = MaTab:newpage()
+local MaPage5 = MaTab:newpage()
+
+local MiscPage1 = MiscTab:newpage()
+local MiscPage2 = MiscTab:newpage()
+
+local SettingPage1 = SettingTab:newpage()
+local SettingPage2 = SettingTab:newpage()
