@@ -101,8 +101,8 @@ end
 		tween:Create(instance,TweenInfo.new(wa,Enum.EasingStyle[style]),{properties}):Play()
 	end
 
-	local create = {}
-	function create.win()
+	local createh = {}
+	function createh.win()
 	    if logoid == nil or logoid == "" then
 	        logoid = "10956907840"
 	    end
