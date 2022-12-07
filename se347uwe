@@ -1,11 +1,4 @@
-_G.ColorMethod = Color3.fromRGB(255,171,0)
-LogoId = 11293296882
-LogoLink = "https://www.roblox.com/asset-thumbnail/image?assetId=".. LogoId .."&width=0&height=0&format=png"
-NameHub = "E-SAN"
-local UiLib =  game:GetService("CoreGui"):FindFirstChild("UiLibrary") 
-if UiLib then 
-    UiLib:Destroy()
-end
+
 
 	local UserInputService = game:GetService("UserInputService")
 	local TweenService = game:GetService("TweenService")
