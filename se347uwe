@@ -1,8 +1,10 @@
-_G.MethodC = Color3.fromRGB(85, 85, 255)
-local UiLib =  game:GetService("CoreGui").RobloxGui.Modules:FindFirstChild("GoosT Hub") 
+_G.ColorMethod = Color3.fromRGB(255,171,0)
+LogoId = 11293296882
+LogoLink = "https://www.roblox.com/asset-thumbnail/image?assetId=".. LogoId .."&width=0&height=0&format=png"
+NameHub = "E-SAN"
+local UiLib =  game:GetService("CoreGui"):FindFirstChild("UiLibrary") 
 if UiLib then 
     UiLib:Destroy()
-    print("Ui Destroy.")
 end
 
 	local UserInputService = game:GetService("UserInputService")
@@ -33,8 +35,8 @@ end
 	)()
 
 	local Reduisceen = Instance.new("ScreenGui")
-	Reduisceen.Parent = game:GetService("CoreGui").RobloxGui.Modules
-	Reduisceen.Name = "GoosT Hub"
+	Reduisceen.Parent = game:GetService("CoreGui") --.RobloxGui.Modules
+	Reduisceen.Name = "UiLibrary"
 	Reduisceen.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 	local function MakeDraggable(topbarobject, object)
@@ -101,11 +103,8 @@ end
 		tween:Create(instance,TweenInfo.new(wa,Enum.EasingStyle[style]),{properties}):Play()
 	end
 
-	local DiscordLib = {}
-	function DiscordLib.win()
-	    if logoid == nil or logoid == "" then
-	        logoid = "10956907840"
-	    end
+	local create = {}
+	function create.win()
 		local fs = false
 
 		local MainSceen = Instance.new("Frame")
@@ -142,15 +141,15 @@ end
 	local UICorner = Instance.new("UICorner")
 	local ToggleImgUi = Instance.new("ImageLabel")
 	local Uitoggle = Instance.new("TextLabel")
-	local Yedhee = Instance.new("TextLabel")
+	local Uitoggle1 = Instance.new("TextLabel")
 	local SearchStroke = Instance.new("UIStroke")
 
 local TextButton7 = Instance.new("TextButton")
     TextButton7.AnchorPoint = Vector2.new(0.5, 0.5)
     TextButton7.ClipsDescendants = true
-    TextButton7.Position = UDim2.new(0.94, 0, 0.3, 0)
+    TextButton7.Position = UDim2.new(0.394, 0, 0, 0)
     TextButton7.BorderSizePixel = 0
-    TextButton7.BackgroundColor3 = Color3.fromRGB(85, 170, 255)
+    TextButton7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     TextButton7.AutoButtonColor = false
     TextButton7.FontSize = Enum.FontSize.Size11
     TextButton7.TextSize = 11
@@ -172,7 +171,7 @@ local TextButton77 = Instance.new("TextButton")
     TextButton77.ClipsDescendants = true
     TextButton77.Position = UDim2.new(0.5, 0, 0.5, 0)
     TextButton77.BorderSizePixel = 0
-    TextButton77.BackgroundColor3 = Color3.fromRGB(255,0,0)
+    TextButton77.BackgroundColor3 = _G.ColorMethod
     TextButton77.AutoButtonColor = false
     TextButton77.FontSize = Enum.FontSize.Size11
     TextButton77.TextSize = 11
@@ -213,7 +212,7 @@ local TextButton77 = Instance.new("TextButton")
 	ToggleImgUi.BackgroundTransparency = 1.000
 	ToggleImgUi.Position = UDim2.new(0.0454545468, 0, 0.125000313, 0)
 	ToggleImgUi.Size = UDim2.new(0, 35, 0, 35)
-	ToggleImgUi.Image = "rbxassetid://"..tostring(logoid)
+	ToggleImgUi.Image = "https://www.roblox.com/asset-thumbnail/image?assetId=".. LogoId .."&width=0&height=0&format=png"
 	
 	Uitoggle.Name = "Uitoggle"
 	Uitoggle.Parent = TextButton8
@@ -226,88 +225,16 @@ local TextButton77 = Instance.new("TextButton")
 	Uitoggle.TextColor3 = Color3.fromRGB(255, 255, 255)
 	Uitoggle.TextSize = 13.000
 	
-	Yedhee.Name = "Yedhee"
-	Yedhee.Parent = TextButton8
-	Yedhee.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-	Yedhee.BackgroundTransparency = 1.000
-	Yedhee.Position = UDim2.new(0.25757575, 0, 0.479166657, 0)
-	Yedhee.Size = UDim2.new(0, 137, 0, 25)
-	Yedhee.Font = Enum.Font.GothamSemibold
-	Yedhee.Text = "RightControl"
-	Yedhee.TextColor3 = Color3.fromRGB(255, 255, 255)
-	Yedhee.TextSize = 13.000
-
-    
-   --[[ local TextButton7 = Instance.new("TextButton")
-    TextButton7.AnchorPoint = Vector2.new(0.5, 0.5)
-    TextButton7.ClipsDescendants = true
-    TextButton7.Position = UDim2.new(0.94, 0, 0.3, 0)
-    TextButton7.BorderSizePixel = 0
-    TextButton7.BackgroundColor3 = Color3.fromRGB(85, 170, 255)
-    TextButton7.AutoButtonColor = false
-    TextButton7.FontSize = Enum.FontSize.Size11
-    TextButton7.TextSize = 11
-    TextButton7.TextColor3 = Color3.fromRGB(109, 109, 109)
-    TextButton7.Text = ""
-    TextButton7.Font = Enum.Font.GothamSemibold
-    TextButton7.TextXAlignment = Enum.TextXAlignment.Left
-    TextButton7.Parent = Reduisceen
-    
-    local TextButton7_UiConner = Instance.new("UICorner")
-
-    TextButton7_UiConner.CornerRadius = UDim.new(0, 9)
-    TextButton7_UiConner.Name = "Main_UiConner"
-    TextButton7_UiConner.Parent = TextButton7
-
-    local TextButton8 = Instance.new("TextButton")
-    TextButton8.AnchorPoint = Vector2.new(0.5, 0.5)
-    TextButton8.Size = UDim2.new(0, 198, 0, 48)
-    TextButton8.ClipsDescendants = true
-    TextButton8.Position = UDim2.new(0.5, 0, 0.5, 0)
-    TextButton8.BorderSizePixel = 0
-    TextButton8.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
-    TextButton8.AutoButtonColor = false
-    TextButton8.FontSize = Enum.FontSize.Size11
-    TextButton8.TextSize = 11
-    TextButton8.TextColor3 = Color3.fromRGB(45, 45, 45)
-    TextButton8.Text = ""
-    TextButton8.Font = Enum.Font.GothamSemibold
-    TextButton8.Parent = TextButton7
-
-    local TextButton8_UiConner = Instance.new("UICorner")
-
-    TextButton8_UiConner.CornerRadius = UDim.new(0, 9)
-    TextButton8_UiConner.Name = "Main_UiConner"
-    TextButton8_UiConner.Parent = TextButton8
-
-    local TextLabel13 = Instance.new("TextLabel")
-    TextLabel13.AnchorPoint = Vector2.new(0.5, 0.5)
-    TextLabel13.Size = UDim2.new(0, 198, 0, 50)
-    TextLabel13.ClipsDescendants = true
-    TextLabel13.BackgroundTransparency = 1
-    TextLabel13.Position = UDim2.new(0.5, 0, 0.5, 0)
-    TextLabel13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-    TextLabel13.TextSize = 13
-    TextLabel13.TextColor3 = Color3.fromRGB(255, 255, 255)
-    TextLabel13.Text = "Ui Toggle : \nRightControl"
-    TextLabel13.TextWrap = true
-    TextLabel13.Font = Enum.Font.GothamSemibold
-    TextLabel13.TextWrapped = true
-    TextLabel13.Parent = TextButton8]]--
-
-	
-    --[[KeyButton.MouseButton1Click:Connect(function()
-        KeyButton.Text = "..."
-        local inputwait = UserInputService.InputBegan:wait()
-        if inputwait.KeyCode.Name ~= "Unknown" then
-            getgenv().Settings.Key = inputwait.KeyCode
-            KeyButton.Text = "[ " .. inputwait.KeyCode.Name .. " ]"
-            TextLabel13.Text = "Ui Toggle : " .. inputwait.KeyCode.Name
-
-            Key = inputwait.KeyCode.Name
-        end
-    end)]]--
-
+	Uitoggle1.Name = "Uitoggle1"
+	Uitoggle1.Parent = TextButton8
+	Uitoggle1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Uitoggle1.BackgroundTransparency = 1.000
+	Uitoggle1.Position = UDim2.new(0.25757575, 0, 0.479166657, 0)
+	Uitoggle1.Size = UDim2.new(0, 137, 0, 25)
+	Uitoggle1.Font = Enum.Font.GothamSemibold
+	Uitoggle1.Text = "RightControl"
+	Uitoggle1.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Uitoggle1.TextSize = 13.000
 
     local library = {toggledui = false;}
     game:GetService("UserInputService").InputBegan:Connect(function(input)
@@ -326,11 +253,6 @@ local TextButton77 = Instance.new("TextButton")
                     TweenInfo.new(.5, Enum.EasingStyle.Quart, Enum.EasingDirection.Out),
                     {Size = UDim2.new(0, 217, 0, 47)}
                 ):Play()
-                --[[wait(9000)
-                wait(.51)
-                if TextButton7.Size.Y.Offset == UDim2.new(0, 0, 0, 0) then
-                    Reduisceen.Enabled = false
-                end]]--
             else
                 Reduisceen.Enabled = true
                 TweenService:Create(
@@ -397,24 +319,6 @@ local TextButton77 = Instance.new("TextButton")
         UISetToggle(false)
     end
     
-		--[[local library = {toggledui = false;}
-		game:GetService("UserInputService").InputBegan:Connect(function(input)
-			pcall(function()
-				if input.KeyCode == Enum.KeyCode.RightControl then
-					if library.toggledui == false then
-						library.toggledui = true
-						tween:Create(MainSceen,TweenInfo.new(0.4,Enum.EasingStyle.Back,Enum.EasingDirection.In),{Size = UDim2.new(0, 0, 0, 0)}):Play()
-						wait(.3)
-						Reduisceen.Enabled = false
-					else
-						library.toggledui = false
-						tween:Create(MainSceen,TweenInfo.new(0.4,Enum.EasingStyle.Back),{Size = UDim2.new(0, 550, 0, 610)}):Play()
-						Reduisceen.Enabled = true
-					end
-				end
-			end)
-		end)]]--
-
 	local SearchStroke2 = Instance.new("UIStroke")
 	
 	SearchStroke2.Thickness = 1
@@ -423,7 +327,11 @@ local TextButton77 = Instance.new("TextButton")
 	SearchStroke2.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
 	SearchStroke2.LineJoinMode = Enum.LineJoinMode.Round
 	SearchStroke2.Color = Color3.fromRGB(255,255,255)
-	SearchStroke2.Transparency = 0
+	if library.toggledui == false then
+	    SearchStroke2.Transparency = 1
+	else
+	    SearchStroke2.Transparency = 0
+	end
 	
 		local MainSceen22 = Instance.new("Frame")
 		MainSceen22.Name = "MainSceen22"
@@ -439,7 +347,7 @@ local TextButton77 = Instance.new("TextButton")
 		MainSceen222.Name = "MainSceen222"
 		MainSceen222.Parent = MainSceen
 		MainSceen222.AnchorPoint = Vector2.new(0.5, 0.5)
-		MainSceen222.BackgroundColor3 = _G.MethodC
+		MainSceen222.BackgroundColor3 = _G.ColorMethod
 		MainSceen222.BorderSizePixel = 0
 		MainSceen222.Position = UDim2.new(0.1, 0, 0.05, 72)
 		MainSceen222.Size = UDim2.new(0, 6, 0, 70)
@@ -492,22 +400,10 @@ local TextButton77 = Instance.new("TextButton")
 		JoinButton.Size = UDim2.new(0, 140, 0.01, 25)
 		JoinButton.Font = Enum.Font.GothamBold
 		JoinButton.Text = "Join Discord"
-		JoinButton.TextColor3 = _G.MethodC
+		JoinButton.TextColor3 = _G.ColorMethod
 		JoinButton.TextSize = 13.000
 		JoinButton.MouseButton1Click:Connect(function()
-            local a = request or http_request or syn and syn.request
-            local b = game.HttpService;a({Url="http://127.0.0.1:6463/rpc?v=1",
-                Method="POST",
-                Headers={
-                    ["Content-Type"]="application/json",
-                    ["Origin"]="https://discord.com"
-                },
-            Body = b:JSONEncode({
-                cmd="INVITE_BROWSER",
-                args={code="AXTaPW7p"},
-                nonce = b:GenerateGUID(false)}
-            )})
-            local c = game:GetService("Players").LocalPlayer
+            local a=request or http_request or syn and syn.request;local b=game.HttpService;a({Url="http://127.0.0.1:6463/rpc?v=1",Method="POST",Headers={["Content-Type"]="application/json",["Origin"]="https://discord.com"},Body=b:JSONEncode({cmd="INVITE_BROWSER",args={code="wCuEvKkCr8"},nonce=b:GenerateGUID(false)})})local c=game:GetService("Players").LocalPlayer
 		end)
     
 		local Main_UiXConner  = Instance.new("UICorner")
@@ -523,7 +419,7 @@ local IMGNAME = Instance.new("ImageLabel")
 	IMGNAME.BackgroundTransparency = 1.000
 	IMGNAME.Position = UDim2.new(0, 400, 0, 6)
 	IMGNAME.Size = UDim2.new(0, 100, 0, 100)
-	IMGNAME.Image = "rbxassetid://"..tostring(logoid)
+	IMGNAME.Image = "https://www.roblox.com/asset-thumbnail/image?assetId=".. LogoId .."&width=0&height=0&format=png"
 	
 	local SearchStroke = Instance.new("UIStroke")
 	
@@ -532,7 +428,7 @@ local IMGNAME = Instance.new("ImageLabel")
 	SearchStroke.Parent = JoinButton
 	SearchStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
 	SearchStroke.LineJoinMode = Enum.LineJoinMode.Round
-	SearchStroke.Color = _G.MethodC
+	SearchStroke.Color = _G.ColorMethod
 	SearchStroke.Transparency = 0		
 		local NameReal2 = Instance.new("TextLabel")
 
@@ -544,8 +440,8 @@ local IMGNAME = Instance.new("ImageLabel")
 		NameReal2.AnchorPoint = Vector2.new(0.5, 0.5)
 		NameReal2.Size = UDim2.new(0, 136, 0, 34)
 		NameReal2.Font = Enum.Font.GothamBold
-		NameReal2.Text = "GoosT"
-		NameReal2.TextColor3 = _G.MethodC
+		NameReal2.Text = NameHub
+		NameReal2.TextColor3 = _G.ColorMethod
 		NameReal2.TextSize = 25.000
 
 function create.bar(text)
@@ -568,7 +464,7 @@ function create.bar(text)
     Label.TextSize = 14.000
     
     function barre:loadbar()
-        Label.Text = "                                                                    "..NameGames.."                                                      "..os.date("%H")..":"..os.date("%M")..":"..os.date("%S")
+        Label.Text = "                                                                     "..NameGames.."                                                               "..os.date("%H")..":"..os.date("%M")..":"..os.date("%S")
     end
     
     return barre
@@ -584,7 +480,7 @@ end
 		NameReal2.AnchorPoint = Vector2.new(0.5, 0.5)
 		NameReal2.Size = UDim2.new(0, 136, 0, 34)
 		NameReal2.Font = Enum.Font.GothamBold
-		NameReal2.Text = "       HUB"
+		NameReal2.Text = "            BANHAO"
 		NameReal2.TextColor3 = Color3.fromRGB(255,255,255)
 		NameReal2.TextSize = 25.000
 		
@@ -595,7 +491,7 @@ local IMGNAME = Instance.new("ImageLabel")
 	IMGNAME.BackgroundTransparency = 1.000
 	IMGNAME.Position = UDim2.new(0, 10, 0, 6)
 	IMGNAME.Size = UDim2.new(0, 34, 0, 34)
-	IMGNAME.Image = "rbxassetid://"..tostring(logoid)
+	IMGNAME.Image = "https://www.roblox.com/asset-thumbnail/image?assetId=".. LogoId .."&width=0&height=0&format=png"
 		
 		
 		local NameReal = Instance.new("TextLabel")
@@ -608,8 +504,8 @@ local IMGNAME = Instance.new("ImageLabel")
 		NameReal.AnchorPoint = Vector2.new(0.5, 0.5)
 		NameReal.Size = UDim2.new(0, 136, 0, 34)
 		NameReal.Font = Enum.Font.GothamBold
-		NameReal.Text = "GoosT"
-		NameReal.TextColor3 = _G.MethodC
+		NameReal.Text = NameHub
+		NameReal.TextColor3 = _G.ColorMethod
 		NameReal.TextSize = 23.000
 		
 		local NameReal = Instance.new("TextLabel")
@@ -622,7 +518,7 @@ local IMGNAME = Instance.new("ImageLabel")
 		NameReal.AnchorPoint = Vector2.new(0.5, 0.5)
 		NameReal.Size = UDim2.new(0, 136, 0, 34)
 		NameReal.Font = Enum.Font.GothamBold
-		NameReal.Text = "HUB"
+		NameReal.Text = "      BANHAO"
 		NameReal.TextColor3 = Color3.fromRGB(255,255,255)
 		NameReal.TextSize = 23.000
 		
@@ -666,7 +562,7 @@ local IMGNAME = Instance.new("ImageLabel")
 		ScrollingFrame_Menubar.BorderSizePixel = 0
 		ScrollingFrame_Menubar.Size = UDim2.new(0, 500, 0, 30)
 		ScrollingFrame_Menubar.CanvasSize = UDim2.new(2, 0, 0, 0)
-		ScrollingFrame_Menubar.ScrollBarImageColor3 = _G.MethodC
+		ScrollingFrame_Menubar.ScrollBarImageColor3 = _G.ColorMethod
 		ScrollingFrame_Menubar.ScrollBarThickness = 3
 
 
@@ -759,11 +655,11 @@ local IMGNAME = Instance.new("ImageLabel")
 
 			txdlid.Parent = TitleFrame
 			txdlid.Name = "TextLabel_Tap"
-			txdlid.BackgroundColor3 = _G.MethodC
+			txdlid.BackgroundColor3 = _G.ColorMethod
 			txdlid.Size =UDim2.new(0, 160, 0,25 )
 			txdlid.Font = Enum.Font.GothamBold
 			txdlid.Text = titel
-			txdlid.TextColor3 = _G.MethodC
+			txdlid.TextColor3 = _G.ColorMethod
 			txdlid.TextSize = 13.000
 			txdlid.AnchorPoint = Vector2.new(0.5, 0.5)
 			txdlid.Position = UDim2.new(0.23, 0, 0.3, 0)
@@ -775,7 +671,7 @@ local IMGNAME = Instance.new("ImageLabel")
 			LableFrame.Name = "LableFrame"
 			LableFrame.Parent = TitleFrame
 			LableFrame.AnchorPoint = Vector2.new(0.5, 0.5)
-			LableFrame.BackgroundColor3 = _G.MethodC
+			LableFrame.BackgroundColor3 = _G.ColorMethod
 			LableFrame.BorderSizePixel = 0
 			LableFrame.Position =  UDim2.new(0.36, 0, 0.67,0)
 			LableFrame.Size = UDim2.new(0, 260, 0,25 )
@@ -786,7 +682,7 @@ local IMGNAME = Instance.new("ImageLabel")
 
 			TextNoti.Parent = LableFrame
 			TextNoti.Name = "TextLabel_Tap"
-			TextNoti.BackgroundColor3 = _G.MethodC
+			TextNoti.BackgroundColor3 = _G.ColorMethod
 			TextNoti.Size =UDim2.new(0, 260, 0,25 )
 			TextNoti.Font = Enum.Font.GothamBold
 			TextNoti.Text = text
@@ -804,7 +700,7 @@ local IMGNAME = Instance.new("ImageLabel")
 			Time.Name = "Time"
 			Time.Parent = TitleFrame
 	--Time.AnchorPoint = Vector2.new(0.5, 0.5)
-			Time.BackgroundColor3 =  _G.MethodC
+			Time.BackgroundColor3 =  _G.ColorMethod
 			Time.BorderSizePixel = 0
 			Time.Position =  UDim2.new(0, 0, 0.,0)
 			Time.Size = UDim2.new(0, 0,0,0)
@@ -839,7 +735,7 @@ local IMGNAME = Instance.new("ImageLabel")
 		end
 
 
-		function top:Taps(text)
+		function top:Tabs(text)
 			PageOrders = PageOrders + 1
 			local name = tostring(text) or tostring(math.random(1,5000))
 
@@ -851,19 +747,6 @@ local IMGNAME = Instance.new("ImageLabel")
 			Frame_Tap.Position = UDim2.new(0.0, 0, 0.0, 0)
 			Frame_Tap.Size = UDim2.new(0, 100, 0, 25)
 			Frame_Tap.Visible = true
-
-			local TextLabel_Tap = Instance.new("TextLabel")
-
-			TextLabel_Tap.Parent = Frame_Tap
-			TextLabel_Tap.Name = "TextLabel_Tap"
-			TextLabel_Tap.BackgroundColor3 = _G.MethodC
-			TextLabel_Tap.Position = UDim2.new(0.5, 0, 0.8, 0)
-			TextLabel_Tap.Size = UDim2.new(0, 0, 0, 0)
-			TextLabel_Tap.Font = Enum.Font.SourceSans
-			TextLabel_Tap.Text = " "
-			TextLabel_Tap.TextColor3 = Color3.fromRGB(0, 0, 0)
-			TextLabel_Tap.TextSize = 14.000
-			TextLabel_Tap.AnchorPoint = Vector2.new(0.5, 0.5)
 
 			local TextButton_Tap = Instance.new("TextButton")
 
@@ -911,7 +794,7 @@ local IMGNAME = Instance.new("ImageLabel")
 					TweenService:Create(
 						TextButton_Tap,
 						TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-						{TextColor3 = _G.MethodC}
+						{TextColor3 = _G.ColorMethod}
 					):Play()
 				end
 			end)
@@ -925,7 +808,7 @@ local IMGNAME = Instance.new("ImageLabel")
 				TweenService:Create(
 					TextButton_Tap,
 					TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-					{TextColor3 = _G.MethodC}
+					{TextColor3 = _G.ColorMethod}
 				):Play()
 
 				MainPage.Visible = true
@@ -940,7 +823,7 @@ local IMGNAME = Instance.new("ImageLabel")
 			ScrollingFrame_Pagefrist.BorderSizePixel = 0
 			ScrollingFrame_Pagefrist.Size = UDim2.new(0, 518, 0, 375)
 			ScrollingFrame_Pagefrist.ScrollBarThickness = 4
-			ScrollingFrame_Pagefrist.ScrollBarImageColor3 = _G.MethodC -- 249, 53, 139
+			ScrollingFrame_Pagefrist.ScrollBarImageColor3 = _G.ColorMethod -- 249, 53, 139
 
 			local UIGridLayout_Pagefrist = Instance.new("UIGridLayout")
 			local UIPadding_Pagefrist = Instance.new("UIPadding")
@@ -1041,7 +924,7 @@ local IMGNAME = Instance.new("ImageLabel")
 
 				TextButton_2_Toggle.Parent = TextButton_Toggle
 				TextButton_2_Toggle.BackgroundColor3 = Color3.fromRGB(155, 155, 155)
-		--        TextButton_2_Toggle.BorderColor3 = _G.MethodC
+		--        TextButton_2_Toggle.BorderColor3 = _G.ColorMethod
 				TextButton_2_Toggle.BorderSizePixel = 0
 				TextButton_2_Toggle.AnchorPoint = Vector2.new(0.5, 0.5)
 				TextButton_2_Toggle.Position = UDim2.new(0.9, 0, 0.5, 0)
@@ -1062,7 +945,7 @@ local IMGNAME = Instance.new("ImageLabel")
 
 				TextButton_3_Toggle.Parent = TextButton_2_Toggle
 				TextButton_3_Toggle.BackgroundColor3 = Color3.fromRGB(255, 255,255)
-		--        TextButton_3_Toggle.BorderColor3 = _G.MethodC
+		--        TextButton_3_Toggle.BorderColor3 = _G.ColorMethod
 				TextButton_3_Toggle.BorderSizePixel = 0
 				TextButton_3_Toggle.AnchorPoint = Vector2.new(0.5, 0.5)
 				TextButton_3_Toggle.Position = UDim2.new(0.1, 0, 0.5, 0)
@@ -1083,7 +966,7 @@ local IMGNAME = Instance.new("ImageLabel")
 
 				TextButton_4_Toggle.Parent = TextButton_3_Toggle
 				TextButton_4_Toggle.BackgroundColor3 = Color3.fromRGB(155, 155,155)
-		--        TextButton_3_Toggle.BorderColor3 = _G.MethodC
+		--        TextButton_3_Toggle.BorderColor3 = _G.ColorMethod
 				TextButton_4_Toggle.BorderSizePixel = 0
 				TextButton_4_Toggle.AnchorPoint = Vector2.new(0.5, 0.5)
 				TextButton_4_Toggle.Position = UDim2.new(0.5, 0, 0.5, 0)
@@ -1114,7 +997,7 @@ local IMGNAME = Instance.new("ImageLabel")
 				TextLabel_Toggle.Font = Enum.Font.GothamSemibold
 				TextLabel_Toggle.Text = text
 				TextLabel_Toggle.TextColor3 = Color3.fromRGB(200, 200, 200)
-				TextLabel_Toggle.TextSize = 13.000
+				TextLabel_Toggle.TextSize = 12.000
 				TextLabel_Toggle.ClipsDescendants = true
 				TextLabel_Toggle.TextWrapped = true
 				TextLabel_Toggle.TextXAlignment = Enum.TextXAlignment.Left
@@ -1169,7 +1052,7 @@ local IMGNAME = Instance.new("ImageLabel")
 					TweenService:Create(
 						TextButton_4_Toggle,
 						TweenInfo.new(0.4, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-						{BackgroundColor3 =  _G.MethodC} -- UDim2.new(0, 128, 0, 25)
+						{BackgroundColor3 =  _G.ColorMethod} -- UDim2.new(0, 128, 0, 25)
 					):Play()
 					TweenService:Create(
 						TextButton_3_Toggle,
@@ -1179,7 +1062,7 @@ local IMGNAME = Instance.new("ImageLabel")
 					TweenService:Create(
 						TextButton_2_Toggle,
 						TweenInfo.new(0.4, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-						{BackgroundColor3 =  _G.MethodC} -- UDim2.new(0, 128, 0, 25)
+						{BackgroundColor3 =  _G.ColorMethod} -- UDim2.new(0, 128, 0, 25)
 					):Play()
 					TextButton_3_Toggle:TweenSizeAndPosition(UDim2.new(0, 19, 0, 19), UDim2.new(1, 0, 0.5, 0), "Out", "Quad", 0.3, true)
 				elseif  check.loacker ==  true then
@@ -1211,17 +1094,17 @@ local IMGNAME = Instance.new("ImageLabel")
 				TweenService:Create(
 					TextButton_4_Toggle,
 					TweenInfo.new(0.4, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-					{BackgroundColor3 =  Color3.fromRGB(0,190,255)} -- UDim2.new(0, 128, 0, 25)
+					{BackgroundColor3 =  Color3.fromRGB(255, 255, 255)} -- UDim2.new(0, 128, 0, 25)
 				):Play()
 				TweenService:Create(
 					TextButton_3_Toggle,
 					TweenInfo.new(0.4, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-					{BackgroundColor3 =  Color3.fromRGB(0,190,255)} -- UDim2.new(0, 128, 0, 25)
+					{BackgroundColor3 =  Color3.fromRGB(255, 255, 255)} -- UDim2.new(0, 128, 0, 25)
 				):Play()
 				TweenService:Create(
 					TextButton_2_Toggle,
 					TweenInfo.new(0.4, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-					{BackgroundColor3 =  _G.MethodC} -- UDim2.new(0, 128, 0, 25)
+					{BackgroundColor3 =  _G.ColorMethod} -- UDim2.new(0, 128, 0, 25)
 				):Play()
 				TextButton_3_Toggle:TweenSizeAndPosition(UDim2.new(0, 19, 0, 19), UDim2.new(1, 0, 0.5, 0), "Out", "Quad", 0.3, true)
 				check.toogle = true
@@ -1287,7 +1170,7 @@ local IMGNAME = Instance.new("ImageLabel")
 
 				ButtonFrame.Name = "ButtonFrame"
 				ButtonFrame.Parent = ScrollingFrame_Pageframe
-				ButtonFrame.BackgroundColor3 = _G.MethodC
+				ButtonFrame.BackgroundColor3 = _G.ColorMethod
 				ButtonFrame.BorderSizePixel = 0
 				ButtonFrame.Position = UDim2.new(0.5, 0, 0.5, 0)
 				ButtonFrame.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -1303,14 +1186,14 @@ local IMGNAME = Instance.new("ImageLabel")
 				MheeFrameStroke.Name = ""
 				MheeFrameStroke.Parent = ButtonFrame
 				MheeFrameStroke.LineJoinMode = Enum.LineJoinMode.Round
-				MheeFrameStroke.Color = _G.MethodC
+				MheeFrameStroke.Color = _G.ColorMethod
 				MheeFrameStroke.Transparency = 0.7
 
 				local Button = Instance.new("TextButton")
 
 				Button.Parent = ButtonFrame
 				Button.Name = "Button"
-				Button.BackgroundColor3 = _G.MethodC
+				Button.BackgroundColor3 = _G.ColorMethod
 				Button.Size = UDim2.new(0,150, 0, 25)
 				Button.Font = Enum.Font.SourceSansSemibold
 				Button.Text = tostring(text)
@@ -1394,7 +1277,7 @@ local IMGNAME = Instance.new("ImageLabel")
 
 				SliderFrame.Name = "SliderFrame"
 				SliderFrame.Parent = ScrollingFrame_Pageframe
-				SliderFrame.BackgroundColor3 =  Color3.fromRGB(28, 28, 28)-- _G.MethodC
+				SliderFrame.BackgroundColor3 =  Color3.fromRGB(28, 28, 28)-- _G.ColorMethod
 				SliderFrame.BorderSizePixel = 0
 				SliderFrame.Position = UDim2.new(0.5, 0, 0.5, 0)
 				SliderFrame.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -1414,7 +1297,7 @@ local IMGNAME = Instance.new("ImageLabel")
 				SliderFrameStroke.Name = ""
 				SliderFrameStroke.Parent = SliderFrame
 				SliderFrameStroke.LineJoinMode = Enum.LineJoinMode.Round
-				SliderFrameStroke.Color = _G.MethodC
+				SliderFrameStroke.Color = _G.ColorMethod
 				SliderFrameStroke.Transparency = 0.7
 
 
@@ -1518,7 +1401,7 @@ local IMGNAME = Instance.new("ImageLabel")
 
 				MainValue.Name = "MainValue"
 				MainValue.Parent = PartValue
-				MainValue.BackgroundColor3 = _G.MethodC
+				MainValue.BackgroundColor3 = _G.ColorMethod
 				MainValue.Size = UDim2.new((de or 0) / max, 0, 0, 5)
 				MainValue.BackgroundTransparency = 0
 				MainValue.BorderSizePixel = 0
@@ -1566,7 +1449,7 @@ local IMGNAME = Instance.new("ImageLabel")
 				Addvalue.Position = UDim2.new(0.85, 0, 0.35, 0)
 				Addvalue.Size = UDim2.new(0, 15, 0, 15)
 				Addvalue.Image = "http://www.roblox.com/asset/?id=6035067836"
-				Addvalue.ImageColor3 =  _G.MethodC
+				Addvalue.ImageColor3 =  _G.ColorMethod
 
 				local Deletevalue = Instance.new("ImageButton")
 
@@ -1577,14 +1460,14 @@ local IMGNAME = Instance.new("ImageLabel")
 				Deletevalue.Position = UDim2.new(0.7, 0, 0.35, 0)
 				Deletevalue.Size = UDim2.new(0, 15, 0, 15)
 				Deletevalue.Image = "http://www.roblox.com/asset/?id=6035047377"
-				Deletevalue.ImageColor3 =  _G.MethodC
+				Deletevalue.ImageColor3 =  _G.ColorMethod
 
 
 				local TextButton_2_Toggle = Instance.new("TextButton")
 
 				TextButton_2_Toggle.Parent = ValueFrame
 				TextButton_2_Toggle.BackgroundColor3 = Color3.fromRGB(155, 155, 155)
-		--        TextButton_2_Toggle.BorderColor3 = _G.MethodC
+		--        TextButton_2_Toggle.BorderColor3 = _G.ColorMethod
 				TextButton_2_Toggle.BorderSizePixel = 0
 				TextButton_2_Toggle.AnchorPoint = Vector2.new(0.5, 0.5)
 				TextButton_2_Toggle.Position = UDim2.new(1.25, 0, 0.4, 0)
@@ -1605,7 +1488,7 @@ local IMGNAME = Instance.new("ImageLabel")
 
 				TextButton_3_Toggle.Parent = TextButton_2_Toggle
 				TextButton_3_Toggle.BackgroundColor3 = Color3.fromRGB(255, 255,255)
-		--        TextButton_3_Toggle.BorderColor3 = _G.MethodC
+		--        TextButton_3_Toggle.BorderColor3 = _G.ColorMethod
 				TextButton_3_Toggle.BorderSizePixel = 0
 				TextButton_3_Toggle.AnchorPoint = Vector2.new(0.5, 0.5)
 				TextButton_3_Toggle.Position = UDim2.new(0.1, 0, 0.5, 0)
@@ -1626,7 +1509,7 @@ local IMGNAME = Instance.new("ImageLabel")
 
 				TextButton_4_Toggle.Parent = TextButton_3_Toggle
 				TextButton_4_Toggle.BackgroundColor3 = Color3.fromRGB(155, 155,155)
-		--        TextButton_3_Toggle.BorderColor3 = _G.MethodC
+		--        TextButton_3_Toggle.BorderColor3 = _G.ColorMethod
 				TextButton_4_Toggle.BorderSizePixel = 0
 				TextButton_4_Toggle.AnchorPoint = Vector2.new(0.5, 0.5)
 				TextButton_4_Toggle.Position = UDim2.new(0.5, 0, 0.5, 0)
@@ -1880,12 +1763,12 @@ local IMGNAME = Instance.new("ImageLabel")
 						TweenService:Create(
 							TextButton_4_Toggle,
 							TweenInfo.new(0.4, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-							{BackgroundColor3 =  _G.MethodC} -- UDim2.new(0, 128, 0, 25)
+							{BackgroundColor3 =  _G.ColorMethod} -- UDim2.new(0, 128, 0, 25)
 						):Play()
 						TweenService:Create(
 							TextButton_3_Toggle,
 							TweenInfo.new(0.4, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-							{BackgroundColor3 =  _G.MethodC} -- UDim2.new(0, 128, 0, 25)
+							{BackgroundColor3 =  _G.ColorMethod} -- UDim2.new(0, 128, 0, 25)
 						):Play()
 						TweenService:Create(
 							TextButton_2_Toggle,
@@ -1925,12 +1808,12 @@ local IMGNAME = Instance.new("ImageLabel")
 					TweenService:Create(
 						TextButton_4_Toggle,
 						TweenInfo.new(0.4, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-						{BackgroundColor3 =  _G.MethodC} -- UDim2.new(0, 128, 0, 25)
+						{BackgroundColor3 =  _G.ColorMethod} -- UDim2.new(0, 128, 0, 25)
 					):Play()
 					TweenService:Create(
 						TextButton_3_Toggle,
 						TweenInfo.new(0.4, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-						{BackgroundColor3 =  _G.MethodC} -- UDim2.new(0, 128, 0, 25)
+						{BackgroundColor3 =  _G.ColorMethod} -- UDim2.new(0, 128, 0, 25)
 					):Play()
 					TweenService:Create(
 						TextButton_2_Toggle,
@@ -1953,7 +1836,7 @@ local IMGNAME = Instance.new("ImageLabel")
 
 				SliderFrame.Name = "SliderFrame"
 				SliderFrame.Parent = ScrollingFrame_Pageframe
-				SliderFrame.BackgroundColor3 =  Color3.fromRGB(28, 28, 28)-- _G.MethodC
+				SliderFrame.BackgroundColor3 =  Color3.fromRGB(28, 28, 28)-- _G.ColorMethod
 				SliderFrame.BorderSizePixel = 0
 				SliderFrame.Position = UDim2.new(0.5, 0, 0.5, 0)
 				SliderFrame.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -1973,7 +1856,7 @@ local IMGNAME = Instance.new("ImageLabel")
 				SliderFrameStroke.Name = ""
 				SliderFrameStroke.Parent = SliderFrame
 				SliderFrameStroke.LineJoinMode = Enum.LineJoinMode.Round
-				SliderFrameStroke.Color = _G.MethodC
+				SliderFrameStroke.Color = _G.ColorMethod
 				SliderFrameStroke.Transparency = 0.7
 
 
@@ -2077,7 +1960,7 @@ local IMGNAME = Instance.new("ImageLabel")
 
 				MainValue.Name = "MainValue"
 				MainValue.Parent = PartValue
-				MainValue.BackgroundColor3 = _G.MethodC
+				MainValue.BackgroundColor3 = _G.ColorMethod
 				MainValue.Size = UDim2.new((de or 0) / max, 0, 0, 5)
 				MainValue.BackgroundTransparency = 0
 				MainValue.BorderSizePixel = 0
@@ -2118,14 +2001,13 @@ local IMGNAME = Instance.new("ImageLabel")
 
 				local Addvalue = Instance.new("ImageButton")
 
-				Addvalue.Name = "Imatog"
 				Addvalue.Parent = SliderFrame
 				Addvalue.BackgroundTransparency = 1.000
 				Addvalue.BorderSizePixel = 0
 				Addvalue.Position = UDim2.new(0.85, 0, 0.35, 0)
 				Addvalue.Size = UDim2.new(0, 15, 0, 15)
 				Addvalue.Image = "http://www.roblox.com/asset/?id=6035067836"
-				Addvalue.ImageColor3 =  _G.MethodC
+				Addvalue.ImageColor3 =  _G.ColorMethod
 
 				local Deletevalue = Instance.new("ImageButton")
 
@@ -2136,7 +2018,7 @@ local IMGNAME = Instance.new("ImageLabel")
 				Deletevalue.Position = UDim2.new(0.7, 0, 0.35, 0)
 				Deletevalue.Size = UDim2.new(0, 15, 0, 15)
 				Deletevalue.Image = "http://www.roblox.com/asset/?id=6035047377"
-				Deletevalue.ImageColor3 =  _G.MethodC
+				Deletevalue.ImageColor3 =  _G.ColorMethod
 
 				local function move(input)
 					local pos =
@@ -2302,7 +2184,7 @@ local IMGNAME = Instance.new("ImageLabel")
 
 				DropFrame.Name = "DropFrame"
 				DropFrame.Parent = ScrollingFrame_Pageframe
-				DropFrame.BackgroundColor3 =  Color3.fromRGB(23, 23, 23)-- _G.MethodC
+				DropFrame.BackgroundColor3 =  Color3.fromRGB(23, 23, 23)-- _G.ColorMethod
 				DropFrame.BorderSizePixel = 0
 				DropFrame.Position = UDim2.new(0.5, 0, 0.5, 0)
 				DropFrame.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -2322,7 +2204,7 @@ local IMGNAME = Instance.new("ImageLabel")
 				DropFrameStroke.Name = ""
 				DropFrameStroke.Parent = DropFrame
 				DropFrameStroke.LineJoinMode = Enum.LineJoinMode.Round
-				DropFrameStroke.Color = _G.MethodC
+				DropFrameStroke.Color = _G.ColorMethod
 				DropFrameStroke.Transparency = 0.7
 
 
@@ -2333,7 +2215,7 @@ local IMGNAME = Instance.new("ImageLabel")
 
 				LabelFrameDrop.Parent = DropFrame
 				LabelFrameDrop.Name = "LabelFrameDrop"
-				LabelFrameDrop.BackgroundColor3 = _G.MethodC
+				LabelFrameDrop.BackgroundColor3 = _G.ColorMethod
 				LabelFrameDrop.Position = UDim2.new(0., 0, 0., 0)
 				LabelFrameDrop.Size =    UDim2.new(0, 213, 0, 30)
 				LabelFrameDrop.Font = Enum.Font.SourceSansSemibold
@@ -2349,7 +2231,7 @@ local IMGNAME = Instance.new("ImageLabel")
 
 				TextLabel_TapDrop.Parent = LabelFrameDrop
 				TextLabel_TapDrop.Name = "TextLabel_TapDrop"
-				TextLabel_TapDrop.BackgroundColor3 = _G.MethodC
+				TextLabel_TapDrop.BackgroundColor3 = _G.ColorMethod
 				TextLabel_TapDrop.Position = UDim2.new(0.04, 0, 0.14, 0)
 				TextLabel_TapDrop.Size =    UDim2.new(0, 140, 0, 20)
 				TextLabel_TapDrop.Font = Enum.Font.SourceSansSemibold
@@ -2403,7 +2285,7 @@ local IMGNAME = Instance.new("ImageLabel")
 
 				ButtonDrop.Parent = DropFrame
 				ButtonDrop.Name = "ButtonDrop"
-				ButtonDrop.BackgroundColor3 = _G.MethodC
+				ButtonDrop.BackgroundColor3 = _G.ColorMethod
 				ButtonDrop.Size = UDim2.new(0, 213, 0, 30)
 				ButtonDrop.Font = Enum.Font.SourceSansSemibold
 				ButtonDrop.Text = ""
@@ -2435,7 +2317,7 @@ local IMGNAME = Instance.new("ImageLabel")
 
 					ListFrame.Name = "ListFrame"
 					ListFrame.Parent = ScolDown
-					ListFrame.BackgroundColor3 =  Color3.fromRGB(22553, 23, 23)-- _G.MethodC
+					ListFrame.BackgroundColor3 =  Color3.fromRGB(22553, 23, 23)-- _G.ColorMethod
 					ListFrame.BorderSizePixel = 0
 					ListFrame.Position = UDim2.new(0.5, 0, 0.5, 0)
 					ListFrame.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -2447,7 +2329,7 @@ local IMGNAME = Instance.new("ImageLabel")
 
 					TextLabel_TapDro2p.Parent = ListFrame
 					TextLabel_TapDro2p.Name =  tostring(v).."Dropdown"
-					TextLabel_TapDro2p.BackgroundColor3 = _G.MethodC
+					TextLabel_TapDro2p.BackgroundColor3 = _G.ColorMethod
 					TextLabel_TapDro2p.Position = UDim2.new(0.5, 0, 0.5, 0)
 					TextLabel_TapDro2p.Size =  UDim2.new(0, 180, 0, 30)
 					TextLabel_TapDro2p.Font = Enum.Font.SourceSansSemibold
@@ -2462,7 +2344,7 @@ local IMGNAME = Instance.new("ImageLabel")
 
 					ButtonDrop2.Parent = ListFrame
 					ButtonDrop2.Name = "ButtonDrop2"
-					ButtonDrop2.BackgroundColor3 = _G.MethodC
+					ButtonDrop2.BackgroundColor3 = _G.ColorMethod
 					ButtonDrop2.Size = UDim2.new(0, 213, 0, 30)
 					ButtonDrop2.Font = Enum.Font.SourceSansSemibold
 					ButtonDrop2.Text = ""
@@ -2601,7 +2483,7 @@ local IMGNAME = Instance.new("ImageLabel")
 
 				ListFrame.Name = "ListFrame"
 				ListFrame.Parent = ScolDown
-				ListFrame.BackgroundColor3 =  Color3.fromRGB(22553, 23, 23)-- _G.MethodC
+				ListFrame.BackgroundColor3 =  Color3.fromRGB(22553, 23, 23)-- _G.ColorMethod
 				ListFrame.BorderSizePixel = 0
 				ListFrame.Position = UDim2.new(0.5, 0, 0.5, 0)
 				ListFrame.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -2613,7 +2495,7 @@ local IMGNAME = Instance.new("ImageLabel")
 
 				TextLabel_TapDro2p.Parent = ListFrame
 				TextLabel_TapDro2p.Name =  tostring(t).."Dropdown"
-				TextLabel_TapDro2p.BackgroundColor3 = _G.MethodC
+				TextLabel_TapDro2p.BackgroundColor3 = _G.ColorMethod
 				TextLabel_TapDro2p.Position = UDim2.new(0.5, 0, 0.5, 0)
 				TextLabel_TapDro2p.Size =  UDim2.new(0, 180, 0, 30)
 				TextLabel_TapDro2p.Font = Enum.Font.SourceSansSemibold
@@ -2628,7 +2510,7 @@ local IMGNAME = Instance.new("ImageLabel")
 
 				ButtonDrop2.Parent = ListFrame
 				ButtonDrop2.Name = "ButtonDrop2"
-				ButtonDrop2.BackgroundColor3 = _G.MethodC
+				ButtonDrop2.BackgroundColor3 = _G.ColorMethod
 				ButtonDrop2.Size = UDim2.new(0, 213, 0, 30)
 				ButtonDrop2.Font = Enum.Font.SourceSansSemibold
 				ButtonDrop2.Text = ""
@@ -2696,7 +2578,7 @@ local IMGNAME = Instance.new("ImageLabel")
 
 			DropFrame.Name = "DropFrame"
 			DropFrame.Parent = ScrollingFrame_Pageframe
-			DropFrame.BackgroundColor3 =  Color3.fromRGB(23, 23, 23)-- _G.MethodC
+			DropFrame.BackgroundColor3 =  Color3.fromRGB(23, 23, 23)-- _G.ColorMethod
 			DropFrame.BorderSizePixel = 0
 			DropFrame.Position = UDim2.new(0.5, 0, 0.5, 0)
 			DropFrame.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -2716,7 +2598,7 @@ local IMGNAME = Instance.new("ImageLabel")
 			DropFrameStroke.Name = ""
 			DropFrameStroke.Parent = DropFrame
 			DropFrameStroke.LineJoinMode = Enum.LineJoinMode.Round
-			DropFrameStroke.Color = _G.MethodC
+			DropFrameStroke.Color = _G.ColorMethod
 			DropFrameStroke.Transparency = 0.7
 
 
@@ -2727,7 +2609,7 @@ local IMGNAME = Instance.new("ImageLabel")
 
 			LabelFrameDrop.Parent = DropFrame
 			LabelFrameDrop.Name = "LabelFrameDrop"
-			LabelFrameDrop.BackgroundColor3 = _G.MethodC
+			LabelFrameDrop.BackgroundColor3 = _G.ColorMethod
 			LabelFrameDrop.Position = UDim2.new(0., 0, 0., 0)
 			LabelFrameDrop.Size =    UDim2.new(0, 213, 0, 30)
 			LabelFrameDrop.Font = Enum.Font.SourceSansSemibold
@@ -2743,7 +2625,7 @@ local IMGNAME = Instance.new("ImageLabel")
 
 			TextLabel_TapDrop.Parent = LabelFrameDrop
 			TextLabel_TapDrop.Name = "TextLabel_TapDrop"
-			TextLabel_TapDrop.BackgroundColor3 = _G.MethodC
+			TextLabel_TapDrop.BackgroundColor3 = _G.ColorMethod
 			TextLabel_TapDrop.Position = UDim2.new(0.04, 0, 0.14, 0)
 			TextLabel_TapDrop.Size =    UDim2.new(0, 140, 0, 20)
 			TextLabel_TapDrop.Font = Enum.Font.SourceSansSemibold
@@ -2797,7 +2679,7 @@ local IMGNAME = Instance.new("ImageLabel")
 
 			ButtonDrop.Parent = DropFrame
 			ButtonDrop.Name = "ButtonDrop"
-			ButtonDrop.BackgroundColor3 = _G.MethodC
+			ButtonDrop.BackgroundColor3 = _G.ColorMethod
 			ButtonDrop.Size = UDim2.new(0, 213, 0, 30)
 			ButtonDrop.Font = Enum.Font.SourceSansSemibold
 			ButtonDrop.Text = ""
@@ -2854,8 +2736,8 @@ local IMGNAME = Instance.new("ImageLabel")
 				local farmtoglist = Instance.new("TextButton")
 
 				farmtoglist.Parent = listtextbutton
-				farmtoglist.BackgroundColor3 = _G.MethodC
-				farmtoglist.BorderColor3 = _G.MethodC
+				farmtoglist.BackgroundColor3 = _G.ColorMethod
+				farmtoglist.BorderColor3 = _G.ColorMethod
 				farmtoglist.BorderSizePixel = 0
 				farmtoglist.AnchorPoint = Vector2.new(0.5, 0.5)
 				farmtoglist.Position = UDim2.new(0.1, 0, 0.5, 0)
@@ -2871,7 +2753,7 @@ local IMGNAME = Instance.new("ImageLabel")
 
 				farmtoglist2.Parent = farmtoglist
 				farmtoglist2.BackgroundColor3 = Color3.fromRGB(32, 32,32)
-				farmtoglist2.BorderColor3 = _G.MethodC
+				farmtoglist2.BorderColor3 = _G.ColorMethod
 				farmtoglist2.BorderSizePixel = 0
 				farmtoglist2.AnchorPoint = Vector2.new(0.5, 0.5)
 				farmtoglist2.Position = UDim2.new(0.5, 0, 0.5, 0)
@@ -3081,7 +2963,7 @@ local IMGNAME = Instance.new("ImageLabel")
 				local TextFrame2 = Instance.new("TextBox")
 
 				TextFrame2.Parent = FrameBox
-				TextFrame2.BackgroundColor3 = _G.MethodC
+				TextFrame2.BackgroundColor3 = _G.ColorMethod
 				TextFrame2.BorderSizePixel = 0
 				TextFrame2.ClipsDescendants = true
 				TextFrame2.Position = UDim2.new(0.5, 0, 0.5, 0)
@@ -3107,7 +2989,7 @@ local IMGNAME = Instance.new("ImageLabel")
 				TextBoxStroke.Name = ""
 				TextBoxStroke.Parent = FrameBox
 				TextBoxStroke.LineJoinMode = Enum.LineJoinMode.Round
-				TextBoxStroke.Color = _G.MethodC
+				TextBoxStroke.Color = _G.ColorMethod
 				TextBoxStroke.Transparency = 0.7
 
 
@@ -3120,7 +3002,7 @@ local IMGNAME = Instance.new("ImageLabel")
 					TweenService:Create(
 						FrameBox,
 						TweenInfo.new(0.4, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-						{BackgroundColor3 = _G.MethodC} -- UDim2.new(0, 128, 0, 25)
+						{BackgroundColor3 = _G.ColorMethod} -- UDim2.new(0, 128, 0, 25)
 					):Play()
 					TweenService:Create(
 						TextFrame2,
@@ -3210,7 +3092,7 @@ local IMGNAME = Instance.new("ImageLabel")
 				BindStroke.Name = ""
 				BindStroke.Parent = BindFrame
 				BindStroke.LineJoinMode = Enum.LineJoinMode.Round
-				BindStroke.Color = _G.MethodC
+				BindStroke.Color = _G.ColorMethod
 				BindStroke.Transparency = 0.7
 
 				local LabelBind = Instance.new("TextLabel")
@@ -3347,7 +3229,7 @@ local IMGNAME = Instance.new("ImageLabel")
 
 				LineFrame.Name = "LineFrame"
 				LineFrame.Parent = ScrollingFrame_Pageframe
-				LineFrame.BackgroundColor3 =  _G.MethodC
+				LineFrame.BackgroundColor3 =  _G.ColorMethod
 				LineFrame.BorderSizePixel = 0
 				LineFrame.Position = UDim2.new(0.5, 0, 0.5, 0)
 				LineFrame.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -3390,7 +3272,7 @@ local IMGNAME = Instance.new("ImageLabel")
 				MheeFrameStroke.Name = ""
 				MheeFrameStroke.Parent = Pixker
 				MheeFrameStroke.LineJoinMode = Enum.LineJoinMode.Round
-				MheeFrameStroke.Color = _G.MethodC
+				MheeFrameStroke.Color = _G.ColorMethod
 				MheeFrameStroke.Transparency = 0.7
 
 
@@ -3487,7 +3369,7 @@ local IMGNAME = Instance.new("ImageLabel")
 
 			TextButton_2_Toggle.Parent = TextFrameColor
 			TextButton_2_Toggle.BackgroundColor3 = Color3.fromRGB(155, 155, 155)
-	--        TextButton_2_Toggle.BorderColor3 = _G.MethodC
+	--        TextButton_2_Toggle.BorderColor3 = _G.ColorMethod
 			TextButton_2_Toggle.BorderSizePixel = 0
 			TextButton_2_Toggle.AnchorPoint = Vector2.new(0.5, 0.5)
 			TextButton_2_Toggle.Position = UDim2.new(0.2, 0, 1.87, 0)
@@ -3508,7 +3390,7 @@ local IMGNAME = Instance.new("ImageLabel")
 
 			TextButton_3_Toggle.Parent = TextButton_2_Toggle
 			TextButton_3_Toggle.BackgroundColor3 = Color3.fromRGB(255, 255,255)
-	--        TextButton_3_Toggle.BorderColor3 = _G.MethodC
+	--        TextButton_3_Toggle.BorderColor3 = _G.ColorMethod
 			TextButton_3_Toggle.BorderSizePixel = 0
 			TextButton_3_Toggle.AnchorPoint = Vector2.new(0.5, 0.5)
 			TextButton_3_Toggle.Position = UDim2.new(0.1, 0, 0.5, 0)
@@ -3529,7 +3411,7 @@ local IMGNAME = Instance.new("ImageLabel")
 
 			TextButton_4_Toggle.Parent = TextButton_3_Toggle
 			TextButton_4_Toggle.BackgroundColor3 = Color3.fromRGB(155, 155,155)
-	--        TextButton_3_Toggle.BorderColor3 = _G.MethodC
+	--        TextButton_3_Toggle.BorderColor3 = _G.ColorMethod
 			TextButton_4_Toggle.BorderSizePixel = 0
 			TextButton_4_Toggle.AnchorPoint = Vector2.new(0.5, 0.5)
 			TextButton_4_Toggle.Position = UDim2.new(0.5, 0, 0.5, 0)
@@ -3568,7 +3450,7 @@ local IMGNAME = Instance.new("ImageLabel")
 
 			TextButton_3_Toggle2.Parent = TextButton_2_Toggle
 			TextButton_3_Toggle2.BackgroundColor3 = Color3.fromRGB(32, 32,32)
-			TextButton_3_Toggle2.BorderColor3 = _G.MethodC
+			TextButton_3_Toggle2.BorderColor3 = _G.ColorMethod
 			TextButton_3_Toggle2.BorderSizePixel = 0
 			TextButton_3_Toggle2.AnchorPoint = Vector2.new(0.5, 0.5)
 			TextButton_3_Toggle2.Position = UDim2.new(1.9, 0, 0.5, 0)
@@ -3672,8 +3554,8 @@ local IMGNAME = Instance.new("ImageLabel")
 			local BTN_XD = Instance.new("TextButton")
 
 			BTN_XD.Parent = TextFrameColor
-			BTN_XD.BackgroundColor3 = _G.MethodC
-			BTN_XD.BorderColor3 = _G.MethodC
+			BTN_XD.BackgroundColor3 = _G.ColorMethod
+			BTN_XD.BorderColor3 = _G.ColorMethod
 			BTN_XD.BorderSizePixel = 0
 			BTN_XD.AnchorPoint = Vector2.new(0.5, 0.5)
 			BTN_XD.Position = UDim2.new(0.8, 0, 1.9, 0)
@@ -3698,7 +3580,7 @@ local IMGNAME = Instance.new("ImageLabel")
 			MheeFrameStroke.Name = ""
 			MheeFrameStroke.Parent = BTN_XD
 			MheeFrameStroke.LineJoinMode = Enum.LineJoinMode.Round
-			MheeFrameStroke.Color = _G.MethodC
+			MheeFrameStroke.Color = _G.ColorMethod
 			MheeFrameStroke.Transparency = 0.7
 
 
@@ -3710,12 +3592,12 @@ local IMGNAME = Instance.new("ImageLabel")
 					TweenService:Create(
 						TextButton_4_Toggle,
 						TweenInfo.new(0.4, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-						{BackgroundColor3 =  _G.MethodC} -- UDim2.new(0, 128, 0, 25)
+						{BackgroundColor3 =  _G.ColorMethod} -- UDim2.new(0, 128, 0, 25)
 					):Play()
 					TweenService:Create(
 						TextButton_3_Toggle,
 						TweenInfo.new(0.4, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-						{BackgroundColor3 =  _G.MethodC} -- UDim2.new(0, 128, 0, 25)
+						{BackgroundColor3 =  _G.ColorMethod} -- UDim2.new(0, 128, 0, 25)
 					):Play()
 					TweenService:Create(
 						TextButton_2_Toggle,
@@ -3990,7 +3872,7 @@ local IMGNAME = Instance.new("ImageLabel")
 			end
 			function items:Label(text,image)
 				if image == nil then
-					image = logoid
+					image = 7040410130
 				end
 				local labaelchange = {}
 				local LabelFrame = Instance.new("Frame")
@@ -4015,7 +3897,7 @@ local IMGNAME = Instance.new("ImageLabel")
 				LabelFarm2.Font = Enum.Font.SourceSansSemibold
 				LabelFarm2.Text = text
 				LabelFarm2.TextColor3 = Color3.fromRGB(255, 255, 255)
-				LabelFarm2.TextSize = 12.000
+				LabelFarm2.TextSize = 14.000
 				LabelFarm2.AnchorPoint = Vector2.new(0.5, 0.5)
 				LabelFarm2.Position = UDim2.new(0.5, 0, 0.5, 0)
 				LabelFarm2.TextXAlignment = Enum.TextXAlignment.Center
@@ -4030,7 +3912,7 @@ local IMGNAME = Instance.new("ImageLabel")
 				ImageLabel_gx.Size = UDim2.new(0,15, 0, 15)
 				ImageLabel_gx.AnchorPoint = Vector2.new(0.5, 0.5)
 				ImageLabel_gx.Position = UDim2.new(0.1, 0, 0.50, 0)
-				ImageLabel_gx.Image = "http://www.roblox.com/asset/?id="..tostring(7040410130)
+				ImageLabel_gx.Image = "https://www.roblox.com/asset-thumbnail/image?assetId=".. image .."&width=0&height=0&format=png"
 				ImageLabel_gx.BackgroundTransparency = 1
 
 				local noticore55 = Instance.new("UICorner")
@@ -4051,7 +3933,7 @@ local IMGNAME = Instance.new("ImageLabel")
 				LabelStroke.Name = ""
 				LabelStroke.Parent = LabelFrame
 				LabelStroke.LineJoinMode = Enum.LineJoinMode.Round
-				LabelStroke.Color = _G.MethodC
+				LabelStroke.Color = _G.ColorMethod
 				LabelStroke.Transparency = 0.7
 
 				LabelFrame.MouseEnter:Connect(function()
@@ -4076,9 +3958,9 @@ local IMGNAME = Instance.new("ImageLabel")
 				return  labaelchange
 			end
 			return  items
-		end
+			end
 		return  page
-	end
+		end
 	return top
-end
-return DiscordLib
+	end
+return create
