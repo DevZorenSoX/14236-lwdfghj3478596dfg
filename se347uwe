@@ -102,7 +102,7 @@ end
 	end
 
 	local create = {}
-	function create()
+	function create.win()
 	    if logoid == nil or logoid == "" then
 	        logoid = "10956907840"
 	    end
