@@ -101,8 +101,8 @@ end
 		tween:Create(instance,TweenInfo.new(wa,Enum.EasingStyle[style]),{properties}):Play()
 	end
 
-	local createh = {}
-	function createh.win()
+	local create = {}
+	function create.win()
 	    if logoid == nil or logoid == "" then
 	        logoid = "10956907840"
 	    end
@@ -4073,11 +4073,4 @@ local IMGNAME = Instance.new("ImageLabel")
 				function labaelchange:Change(text2)
 					LabelFarm2.Text = text2
 				end
-				return  labaelchange
-			end
-			return  items
-		end
-		return  page
-	end
-	return top
-end
+				
