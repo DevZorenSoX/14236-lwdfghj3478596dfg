@@ -4073,4 +4073,11 @@ local IMGNAME = Instance.new("ImageLabel")
 				function labaelchange:Change(text2)
 					LabelFarm2.Text = text2
 				end
-				
+				return  labaelchange
+			end
+			return  items
+		end
+		return  page
+	end
+	return top
+end
